@@ -34,16 +34,22 @@ Download the scripts to /home/tools/autoscan. If the directory dont exist, make 
 Clone the repository in this folder.
 #
 # Windows
-This script use standard exploits to exploit Windows Server 2012 SP1, Win7, WinXP and other Windows OS based OS, Websites and CMS systems.
+This script use standard exploits to exploit Windows Server 2012 SP1, Win7, WinXP and other Windows basedOS, Websites and CMS systems.
+#
 # Linux
 The functionality exploiting remote unixoide OS systems are in progress.
+#
 # Development
 New tools are work in progress.
 This tools at the moment have issues, so I never give a garanty for work without errors.
 If you use it, you use it at your own risk.
+#
 # Video
 Yes, not in youtube :-)
 #
+# Webinterface
+Exist, is a simple PHP Script, in development.
+# 
 """
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
