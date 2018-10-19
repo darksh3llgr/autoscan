@@ -30,6 +30,9 @@ For more informations about faraday, please contact the faraday team.
 You need before use it, install some tools. The most of this tools are installed in Kali Linux
 This script are testet with Kali Linux. 
 Installscript exist, but is in development, if you use it, you use it at your own risk.
+Download the scripts to /home/tools/autoscan. If the directory dont exist, make it.
+Clone the repository in this folder.
+#
 # Windows
 This script use standard exploits to exploit Windows Server 2012 SP1, Win7, WinXP and other Windows OS based OS, Websites and CMS systems.
 # Linux
