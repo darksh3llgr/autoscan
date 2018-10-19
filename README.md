@@ -37,13 +37,14 @@ This script are testet with Kali Linux.
 Installscript exist, but is in development, if you use it, you use it at your own risk.
 Download the scripts to /home/tools/autoscan. If the directory dont exist, make it.
 Clone the repository in this folder.
-Have a look for the two png files.
+Scaned all TCP ports, and the most used UDP Ports.
 #
 # Windows
-This script use standard exploits to exploit Windows Server 2012 SP1, Win7, WinXP and other Windows basedOS, Websites and CMS systems.
+This script use standard exploits to exploit Windows Server 2012, Win7, WinXP and other Windows based OS, Websites and CMS systems and other services.
 #
 # Linux
 The functionality exploiting remote unixoide OS systems are in progress.
+But, many services enumerated and exploited also if the server is a linux host.
 #
 # Development
 New tools are work in progress.
