@@ -21,6 +21,11 @@ testssl
 Windows-Exploit-Suggester
 XSSTracer
 yasuo
+arachni
+wpscan
+...
+..
+.
 #
 # Reporting
 For Reporting you need a comercial license from Farady. This tool never include a Faraday license.
@@ -52,7 +57,7 @@ Yes, not in youtube :-)
 #
 ![](File_and_Folder_Structure.png)
 #
-![](
+![](Used_Tools_structure.png)
 #
 # Webinterface
 Exist, is a simple PHP Script, in development.
