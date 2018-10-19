@@ -26,6 +26,9 @@ wpscan
 ...
 ..
 .
+#Scann all TCP ports, and the most used UDP Ports.
+#Many services enumerated and exploited.
+#Genetate for every action a logfile, so the pentester can red it after start the tool and go for a coffe (..or two...)... #then can start the real pentest ;-)
 #
 # Reporting
 For Reporting you need a comercial license from Farady. This tool never include a Faraday license.
@@ -70,3 +73,8 @@ Yes, not in youtube :-)
 #
 ![](autoscan5.png)
 # 
+# to do
+#start nessus scan
+#start a burp scan with the burp api
+#add more tools and exploits
+
