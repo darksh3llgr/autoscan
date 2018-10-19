@@ -48,7 +48,8 @@ If you use it, you use it at your own risk.
 # Video
 Yes, not in youtube :-)
 #
-Images
+#Images
+#
 ![](File_and_Folder_Structure.png)
 #
 # Webinterface
