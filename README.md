@@ -57,8 +57,6 @@ Yes, not in youtube :-)
 #
 # Images
 #
-![](File_and_Folder_Structure.png)
-#
 ![](Used_Tools_structure.png)
 #
 ![](autoscan1.png)
