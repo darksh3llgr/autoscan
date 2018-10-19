@@ -3,29 +3,32 @@
 #
 # Overview
 # autoscan.sh 
-is fully automated penetration test tool linked with Metasploit.
+is fully automated penetration test tool linked with Metasploit and faraday.
 Autoscan identifies the status of all opened ports on the target server and executes the exploit.
 # Other tools
-Brutex
-CMSmap
-explit-database
-Findsploit
-Goohak
-listmap
-MassBled
-serializekiller
-shoker
-ssh-audit
-Sublist3r
-testssl
-Windows-Exploit-Suggester
-XSSTracer
-yasuo
-arachni
-wpscan
-...
-..
-.
+#Brutex
+#CMSmap
+#exploit-database
+#Findsploit
+#Goohak
+#listmap
+#MassBled
+#serializekiller
+#shoker
+#ssh-audit
+#Sublist3r
+#testssl
+#Windows-Exploit-Suggester
+#XSSTracer
+#yasuo
+#arachni
+#wpscan
+#...
+#..
+#.
+#Scann all TCP ports, and the most used UDP Ports.
+#Many services enumerated and exploited.
+#Generate for every tool action a logfile, so the pentester can red it after start the tool and come back from coffe (..or two...)... # then can start the real pentest ;-) # Enumerate the System OS and start exploits for this OS. Enumerated the service over port and start another tool or exploit, or both. # Import automated all generated xml, csv and nessus files to faraday reporting and colaboration server.
 #
 # Reporting
 For Reporting you need a comercial license from Farady. This tool never include a Faraday license.
@@ -37,13 +40,14 @@ This script are testet with Kali Linux.
 Installscript exist, but is in development, if you use it, you use it at your own risk.
 Download the scripts to /home/tools/autoscan. If the directory dont exist, make it.
 Clone the repository in this folder.
-Have a look for the two png files.
+Scaned all TCP ports, and the most used UDP Ports.
 #
 # Windows
-This script use standard exploits to exploit Windows Server 2012 SP1, Win7, WinXP and other Windows basedOS, Websites and CMS systems.
+This script use standard exploits to exploit Windows Server 2012, Win7, WinXP and other Windows based OS, Websites and CMS systems and other services.
 #
 # Linux
 The functionality exploiting remote unixoide OS systems are in progress.
+But, many services enumerated and exploited also if the server is a linux host.
 #
 # Development
 New tools are work in progress.
@@ -57,27 +61,20 @@ Yes, not in youtube :-)
 #
 # Images
 #
-![](File_and_Folder_Structure.png)
-#
 ![](Used_Tools_structure.png)
 #
-![](Bildschirmfoto 2018-10-19 um 22.04.46.png)
+![](autoscan1.png)
 #
-![](Bildschirmfoto 2018-10-19 um 22.05.06.png)
+![](autoscan2.png)
 #
-![](Bildschirmfoto 2018-10-19 um 22.05.18.png)
+![](autoscan3.png)
 #
-![](Bildschirmfoto 2018-10-19 um 22.05.30.png)
+![](autoscan4.png)
 #
-![](Bildschirmfoto 2018-10-19 um 22.05.42.png)
+![](autoscan5.png)
 # 
-"""
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-"""
+# to do
+#start nessus scan
+#start a burp scan with the burp api
+#add more tools and exploits
+
