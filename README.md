@@ -61,15 +61,15 @@ Yes, not in youtube :-)
 #
 ![](Used_Tools_structure.png)
 #
-![](Bildschirmfoto 2018-10-19 um 22.04.46.png)
+![](autoscan1.png)
 #
-![](Bildschirmfoto 2018-10-19 um 22.05.06.png)
+![](autoscan2.png)
 #
-![](Bildschirmfoto 2018-10-19 um 22.05.18.png)
+![](autoscan3.png)
 #
-![](Bildschirmfoto 2018-10-19 um 22.05.30.png)
+![](autoscan4.png)
 #
-![](Bildschirmfoto 2018-10-19 um 22.05.42.png)
+![](autoscan5.png)
 # 
 """
 This program is free software: you can redistribute it and/or modify
