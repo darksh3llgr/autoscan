@@ -32,6 +32,7 @@ This script are testet with Kali Linux.
 Installscript exist, but is in development, if you use it, you use it at your own risk.
 Download the scripts to /home/tools/autoscan. If the directory dont exist, make it.
 Clone the repository in this folder.
+Have a look for the two png files.
 #
 # Windows
 This script use standard exploits to exploit Windows Server 2012 SP1, Win7, WinXP and other Windows basedOS, Websites and CMS systems.
@@ -46,6 +47,7 @@ If you use it, you use it at your own risk.
 #
 # Video
 Yes, not in youtube :-)
+Have a look for the video (in the repository)
 #
 # Webinterface
 Exist, is a simple PHP Script, in development.
