@@ -47,7 +47,9 @@ If you use it, you use it at your own risk.
 #
 # Video
 Yes, not in youtube :-)
-Have a look for the video (in the repository)
+#
+Images
+![](File_and_Folder_Structure.png)
 #
 # Webinterface
 Exist, is a simple PHP Script, in development.
