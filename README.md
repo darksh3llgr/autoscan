@@ -3,7 +3,7 @@
 #
 # Overview
 # autoscan.sh 
-is fully automated penetration test tool linked with Metasploit.
+is fully automated penetration test tool linked with Metasploit and faraday.
 Autoscan identifies the status of all opened ports on the target server and executes the exploit.
 # Other tools
 #Brutex
