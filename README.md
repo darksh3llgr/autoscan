@@ -6,29 +6,29 @@
 is fully automated penetration test tool linked with Metasploit.
 Autoscan identifies the status of all opened ports on the target server and executes the exploit.
 # Other tools
-Brutex
-CMSmap
-explit-database
-Findsploit
-Goohak
-listmap
-MassBled
-serializekiller
-shoker
-ssh-audit
-Sublist3r
-testssl
-Windows-Exploit-Suggester
-XSSTracer
-yasuo
-arachni
-wpscan
-...
-..
-.
+#Brutex
+#CMSmap
+#explit-database
+#Findsploit
+#Goohak
+#listmap
+#MassBled
+#serializekiller
+#shoker
+#ssh-audit
+#Sublist3r
+#testssl
+#Windows-Exploit-Suggester
+#XSSTracer
+#yasuo
+#arachni
+#wpscan
+#...
+#..
+#.
 #Scann all TCP ports, and the most used UDP Ports.
 #Many services enumerated and exploited.
-#Genetate for every action a logfile, so the pentester can red it after start the tool and go for a coffe (..or two...)... #then can start the real pentest ;-)
+#Generate for every tool action a logfile, so the pentester can red it after start the tool and come back from coffe (..or two...)... # then can start the real pentest ;-)
 #
 # Reporting
 For Reporting you need a comercial license from Farady. This tool never include a Faraday license.
