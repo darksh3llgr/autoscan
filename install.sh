@@ -46,9 +46,6 @@ cd Windows-Exploit-Suggester
 ./windows-exploit-suggester.py --update
 pip install xlrd --upgrade
 cd $TOOL_DIR
-curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb
-chmod 755 msfinstall 
-./msfinstall
 git clone https://github.com/infobyte/faraday.git faraday-dev
 cd faraday-dev
 sudo apt-get install build-essential ipython python-setuptools python-pip python-dev libssl-dev libffi-dev couchdb pkg-config libssl-dev libffi-dev libxml2-devlibxslt1-dev libfreetype6-dev libpng-dev
