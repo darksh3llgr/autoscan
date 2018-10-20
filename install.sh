@@ -16,6 +16,8 @@ mkdir $TOOL_DIR 2> /dev/null
 cd $TOOL_DIR
 
 echo -e "$ORANGE + -- --=[Installing all dependencies...$RESET"
+echo -e "$ORANGE + -- --=[download autoscan files in $INSTALL_DIR"
+git clone https://github.com/darksh3llgr/autoscan.git
 apt-get install ruby rubygems python dos2unix zenmap sslyze uniscan xprobe2 cutycapt unicornscan host whois dirb dnsrecon curl nmap php php-curl hydra iceweasel wpscan sqlmap nbtscan enum4linux cisco-torch metasploit-framework theharvester dnsenum nikto smtp-user-enum whatweb sslscan amap
 pip install dnspython colorama tldextract urllib3 ipaddress arachni
 gem install rake
