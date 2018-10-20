@@ -77,4 +77,5 @@ Yes, not in youtube :-)
 #start nessus scan
 #start a burp scan with the burp api
 #add more tools and exploits
+#solve all issues and complete the install script
 
