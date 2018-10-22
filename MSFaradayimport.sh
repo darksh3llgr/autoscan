@@ -4,6 +4,9 @@
 # by @darkshellGR
 # please dont copy, do a fork ;-)
 # You need metasploit installed and faraday local on your host
+# start the script ./MSFaradayimport.sh TARGET Customername LOGFOLDER REPORTSERVER
+# example: ./MSFaradayimport.sh 1.2.3.4 Blabla /var/log 11.22.33.44
+#
 CUSTOMER=$2
 echo $CUSTOMER
 echo "Log path is: $2"
