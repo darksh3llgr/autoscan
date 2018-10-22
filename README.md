@@ -77,4 +77,8 @@ Yes, not in youtube :-)
 #start a burp scan with the burp api
 #add more tools and exploits
 #solve all issues and complete the install script
+#add veil support and nps_payload to distribute the payload over smb port
+#add kerberos silver ticket extraction without msf
+#...... ......
+
 
