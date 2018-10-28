@@ -8,7 +8,15 @@ Automated Scanning, Pentesting, Exploiting and Reporting
 Autoscan is a fully automated penetration testing tool linked to Metasploit and faraday.
 Autoscan identifies the status of all open ports on the target server and executes the exploit.
 
-## Other tools
+## Procedure:
+* Scann all TCP ports, and most used UDP Ports.
+* Many services enumerated and exploited.
+* For every tool action, generate a logfile. The pentester can grab a coffee (or two...) and read the logs once the scan has been completed.
+* then the real pentest can start ;-) 
+* Enumerate the System OS and start exploits for this OS. Enumerate the services running on ports and start another tool or exploit, or both.
+* Import all generated xml, csv and nessus files to faraday reporting and colaboration server. **(I am not the owner of these tools!)** Most of the tools are started from `$TOOL_DIR`. So if a tool does not exist, check if the required tool is installed or linked to your tool directory (`../autoscan/tools/`).
+
+### Other tools
 * Brutex
 * CMSmap
 * exploit-database
@@ -26,17 +34,6 @@ Autoscan identifies the status of all open ports on the target server and execut
 * yasuo
 * arachni
 * wpscan
-* ...
-* ..
-* .
-
-### Procedure:
-* Scann all TCP ports, and the most used UDP Ports.
-* Many services enumerated and exploited.
-* Generate for every tool action a logfile, so the pentester can red it after start the tool and come back from coffe (..or two...)... 
-* then can start the real pentest ;-) 
-* Enumerate the System OS and start exploits for this OS. Enumerated the service over port and start another tool or exploit, or both.
-* Import automated all generated xml, csv and nessus files to faraday reporting and colaboration server. I am not the owner of this tools! Most of the tools started from $TOOL_DIR. So if a tool not exist, look if the required tool is instaled or linked in your ToolDIR (../autoscan/tools/).
 
 ## Reporting
 For Reporting you need a comercial license from Farady. This tool never include a Faraday license.
