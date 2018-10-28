@@ -8,7 +8,7 @@ Automated Scanning, Pentesting, Exploiting and Reporting
 Autoscan is a fully automated penetration testing tool linked to Metasploit and faraday.
 Autoscan identifies the status of all open ports on the target server and executes the exploit.
 
-## Procedure:
+## Procedure
 * Scann all TCP ports, and most used UDP Ports.
 * Many services enumerated and exploited.
 * For every tool action, generate a logfile. The pentester can grab a coffee (or two...) and read the logs once the scan has been completed.
