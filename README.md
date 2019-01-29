@@ -1,5 +1,5 @@
 # autoscan #
-# Automated Scanning, Pentesting , Exploiting and Reporting
+# Automated Scanning / Pentesting, Exploiting and Reporting
 #
 # Overview
 # autoscan.sh 
