@@ -1,12 +1,7 @@
-# autoscan  
-
-## Overview
-
-Automated Scanning, Pentesting, Exploiting and Reporting
-
 ## `autoscan.sh` 
-Autoscan is a fully automated penetration testing tool linked to Metasploit and faraday.
-Autoscan identifies the status of all open ports on the target server and executes the exploit.
+# Overview autoscan.sh 
+is fully automated penetration test tool linked with Metasploit and faraday.
+Autoscan identifies the status of all opened ports on the target server and executes the exploit.
 
 ## Procedure
 * Scann all TCP ports, and most used UDP Ports.
@@ -15,32 +10,6 @@ Autoscan identifies the status of all open ports on the target server and execut
 * then the real pentest can start ;-) 
 * Enumerate the System OS and start exploits for this OS. Enumerate the services running on ports and start another tool or exploit, or both.
 * Import all generated xml, csv and nessus files to faraday reporting and colaboration server. **(I am not the owner of these tools!)** Most of the tools are started from `$TOOL_DIR`. So if a tool does not exist, check if the required tool is installed or linked to your tool directory (`../autoscan/tools/`).
-
-### Other tools
-* Brutex
-* CMSmap
-* exploit-database
-* Findsploit
-* Goohak
-* listmap
-* MassBled
-* serializekiller
-* shoker
-* ssh-audit
-* Sublist3r
-* testssl
-* Windows-Exploit-Suggester
-* XSSTracer
-* yasuo
-* arachni
-* wpscan
-
-# Reporting
-Over Faraday or edit the code and add another reporting tool. But before do a pull request :-D
-
-# Overview autoscan.sh 
-is fully automated penetration test tool linked with Metasploit and faraday.
-Autoscan identifies the status of all opened ports on the target server and executes the exploit.
 
 # Other tools
 #Brutex
@@ -64,17 +33,15 @@ Autoscan identifies the status of all opened ports on the target server and exec
 #..
 #.
 #Scann all TCP ports, and the most used UDP Ports.
-#Many services enumerated and exploited.
-#Generate for every tool action a logfile, so the pentester can red it after start the tool and come back from coffe (..or two...)... # then can start the real pentest ;-) # Enumerate the System OS and start exploits for this OS. Enumerated the service over port and start another tool or exploit, or both. # Import automated all generated xml, csv and nessus files to faraday reporting and colaboration server. I am not the owner of this tools! Most of the tools started from $TOOL_DIR. So if a tool not exist, look if the required tool is instaled or linked in your ToolDIR (../autoscan/tools/).
 
 # Reporting
 For Reporting you need a comercial license from Farady. This tool never include a Faraday license.
 For more informations about faraday, please contact the faraday team.
 
 ## Install and execute
-You need before use it, install some tools. The most of this tools are installed in Kali Linux
+You need before use it, install some tools. The most of this tools are (pre) installed in Kali Linux
 This script are testet with Kali Linux. 
-Installscript exist, but is in development, if you use it, you use it at your own risk.
+Installation script exist, but is in development, if you use it, you use it at your own risk.
 Download the scripts to /home/tools/autoscan. If the directory dont exist, make it.
 Clone the repository in this folder.
 
