@@ -1,4 +1,3 @@
-<<<<<<< master
 # autoscan  
 
 ## Overview
