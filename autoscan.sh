@@ -1,5 +1,5 @@
 #!/bin/bash
-#autoscan and report to faraday by darksh3llgr
+#autoscan, exloit and report to faraday by darksh3llgr
 #30.06.2018
 clear #clear the view first
 #
@@ -34,7 +34,7 @@ LHOST=$(ifconfig  eth0 | grep -w inet | awk {'print $2'})
 SRVHOST=$LHOST
 #
 echo -e "$ORANGE"
-echo -e "-- Vuln scaner & Exploiter -- writen by christos mpatsios aka darksh3llgr aka jonny starky -- ${RESET}"
+echo -e "-- Vuln scaner & Exploiter -- writen by christos mpatsios aka darksh3llInfoSec -- ${RESET}"
 echo ""
 echo -e "$ORANGE"
 echo "You ask me to scan & exploit IP / URL $1"
