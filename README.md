@@ -34,6 +34,10 @@ Autoscan identifies the status of all opened ports on the target server and exec
 #.
 #Scann all TCP ports, and the most used UDP Ports.
 
+
+HAFTUNGSAUSSCHLUSS
+Dieses Tool bezieht sich auf IT, Hacking, Programmierung und Computer | Netzwerk | Software-Sicherheit. Das Wort "Hack", "Pen Testing", "Hacking", das auf diesen Projektseiten verwendet wird, wird als "Ethical Hack" bzw. "Ethical Hacking" bezeichnet. Dies ist kein Tool, das illegale Informationen bereitstellt. Wir fördern weder Hacking noch Software-Cracking. Alle auf diesen Seiten bereitgestellten Informationen dienen ausschließlich Bildungszwecken.
+
 # Reporting
 For Reporting you need a comercial license from Farady. This tool never include a Faraday license.
 For more informations about faraday, please contact the faraday team.
