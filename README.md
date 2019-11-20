@@ -4,7 +4,7 @@ is fully automated penetration test tool linked with Metasploit and faraday.
 Autoscan identifies the status of all opened ports on the target server and executes the exploit.
 
 ## Procedure
-* Scann all TCP ports, and most used UDP Ports.
+* Scan all TCP ports, and most used UDP Ports.
 * Many services enumerated and exploited.
 * For every tool action, generate a logfile. The pentester can grab a coffee (or two...) and read the logs once the scan has been completed.
 * then the real pentest can start ;-) 
