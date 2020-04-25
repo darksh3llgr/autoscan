@@ -1258,7 +1258,7 @@ echo -e "${GREEN}===============================================================
 echo -e "$RED Import all files in metasploit  ${RESET}"
 echo -e "${GREEN}====================================================================================${RESET}"
 echo -e "$GREEN automated metasploit import tool for xml files by darksh3llgr ${RESET}"
-msfconsole -x "workspace -a $workspace; workspace $workspace; db_import $LOG_DIR/$TARGET.*.xml; db_export -f xml $LOG_DIR/$TARGET.msf.xml; exit"
+msfconsole -x "workspace $workspace; db_import $LOG_DIR/$TARGET.*.xml; db_export -f xml $LOG_DIR/$TARGET.msf.xml; exit"
 #
 echo -e "${GREEN}====================================================================================${RESET}"
 echo -e "$RED Import all files in Fraday ${RESET}"
