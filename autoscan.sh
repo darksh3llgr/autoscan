@@ -20,7 +20,7 @@ CustomerName=$CUSTOMER
 workspace=$CUSTOMER
 WORK_DIR="/media/sf_KaliSharedFolder/tools/autoscan"
 TOOL_DIR="/media/sf_KaliSharedFolder/tools/autoscan/tools"
-LOG_DIR=$LOG/$CUSTOMER
+LOG_DIR=$LOG/$CUSTOMER/$(date | md5sum | awk {'print $1'})
 echo $LOG_DIR
 mkdir -p $LOG_DIR
 USER_FILE="/usr/share/brutex/wordlists/simple-users.txt"
