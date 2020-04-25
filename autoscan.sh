@@ -17,7 +17,7 @@ ReportServer=$4
 localIP=$(hostname -I)
 echo $localIP
 CustomerName=$CUSTOMER
-workspace=$TARGET
+workspace=$CUSTOMER
 WORK_DIR="/media/sf_KaliSharedFolder/tools/autoscan"
 TOOL_DIR="/media/sf_KaliSharedFolder/tools/autoscan/tools"
 LOG_DIR=$LOG/$CUSTOMER
@@ -35,7 +35,7 @@ LHOST=$(ifconfig  eth0 | grep -w inet | awk {'print $2'})
 SRVHOST=$LHOST
 #
 echo -e "$GREEN"
-echo -e "-- Vuln scaner & Exploiter -- writen by christos mpatsios aka darksh3llgr aka jonny starky -- ${RESET}"
+echo -e "-- Vuln scaner & Exploiter -- by darksh3llInfoSec aka jonny starky -- ${RESET}"
 echo ""
 echo -e "$GREEN"
 echo "You ask me to scan & exploit IP / URL $1"
