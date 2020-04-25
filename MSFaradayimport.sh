@@ -36,8 +36,8 @@ echo -e "${OKGREEN}=============================================================
 echo "automated metasploit import tool for xml files by @darksh3llgr"
 service postgresql restart
 service couchdb restart
-msfconsole -x "workspace -a $workspace; workspace $workspace; db_import $LOG_DIR/*.xml; db_impor $LOG_DIR/*.nessus; exit"
-msfconsole -x "workspace -a $workspace; workspace $workspace; db_export -f xml $LOG_DIR/$CUSTOMER.msf.xml;exit"
+msfconsole -x "workspace $workspace; db_import $LOG_DIR/*.xml; db_impor $LOG_DIR/*.nessus; exit"
+msfconsole -x "workspace $workspace; db_export -f xml $LOG_DIR/$CUSTOMER.msf.xml;exit"
 #
 DATE=$(date)
 #
