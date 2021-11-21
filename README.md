@@ -1,7 +1,7 @@
 ## `autoscan.sh` 
 # Overview autoscan.sh 
 is fully automated penetration test tool linked with Metasploit and faraday.
-Autoscan identifies the status of all opened ports on the target server and executes the exploit.
+Autoscan identifies the status of all opened ports, search for vulnerabilities on the target system, and execute avialable exploits.
 
 ## Procedure
 * Scan all TCP ports, and most used UDP Ports.
