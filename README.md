@@ -1,6 +1,6 @@
 ## `autoscan.sh` 
 # Overview autoscan.sh 
-is fully automated penetration test tool linked with Metasploit, nmap and other free avialable tools (example tolls included in kali linux) and report all of this in faraday (faraday is one tool, you can use it for other open source reporting tools, an example ist to export it in jira).
+is fully automated penetration test tool linked with Metasploit, nmap and other free avialable tools and report all of this in faraday (faraday is one tool, you can use it for other open source reporting tools, an example is to export it in jira).
 Autoscan identifies the status of all opened ports, search for vulnerabilities on the target system, and execute avialable exploits.
 
 ## Procedure
